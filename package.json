@@ -1,0 +1,33 @@
+{
+  "name": "vue3-flagpack",
+  "version": "1.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/vue3-flagpack.umd.cjs",
+  "module": "./dist/vue3-flagpack.js",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-flagpack.js",
+      "require": "./dist/vue3-flagpack.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "flagpack-core": "^2.0.0",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vue-tsc": "^1.4.2",
+    "sass": "^1.63.4"
+  }
+}
